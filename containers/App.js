@@ -7,6 +7,9 @@ import * as CounterActions from '../actions/counter'
 
 
 // Which part of the Redux global state does our component want to receive as props?
+// counter will be passed as a prop, and it will be populated with state.counter
+// As you can see from our reducer, this will initially be 0 (counter=0)
+// Our component will also receive an actions property, so that it can access all of the actions directly.
 function mapStateToProps(state) {
 
 console.log("Found state " + state);
