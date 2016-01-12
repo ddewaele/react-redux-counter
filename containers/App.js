@@ -12,8 +12,6 @@ import * as CounterActions from '../actions/counter'
 // Our component will also receive an actions property, so that it can access all of the actions directly.
 function mapStateToProps(state) {
 
-console.log("Found state " + state);
-
   return {
     counter: state.counter
   }
